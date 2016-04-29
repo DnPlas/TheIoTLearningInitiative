@@ -2,8 +2,13 @@
 
 import paho.mqtt.client as paho
 from uuid import getnode as get_mac
-import psutil, signal, sys, time
+import psutil, signal, sys, time, dweepy
 from threading import Thread
+
+def dweeting():
+    packet = dataNetwork()
+    dmsg = dweepy.dweet_for(str(GetMACAddress()), {'Value': packet})
+    return dmsg
 
 def interruptHandler(signal, frame):
     sys.exit(0)
@@ -52,10 +57,10 @@ if __name__ == '__main__':
 
     threadx = Thread(target=dataMessageHandler)
     threadx.start()
-
+    
     while True:
-        print "Hello Internet of Things 101"
-        time.sleep(5)
+        dweeting()
+        time.sleep(1)
 
 
 # End of File
