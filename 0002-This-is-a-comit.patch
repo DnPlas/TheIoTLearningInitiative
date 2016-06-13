@@ -1,0 +1,21 @@
+From 31d0f30f6ff8c44165c1e8023f204fa1333d448c Mon Sep 17 00:00:00 2001
+From: Daniela Plascencia <daniela.plascencia@intel.com>
+Date: Mon, 13 Jun 2016 08:54:11 +0000
+Subject: [PATCH 2/2] This is a comit
+
+This is a commit
+---
+ test.c | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.c
+
+diff --git a/test.c b/test.c
+new file mode 100644
+index 0000000..2a7ae44
+--- /dev/null
++++ b/test.c
+@@ -0,0 +1 @@
++teste.co
+-- 
+2.6.6
+

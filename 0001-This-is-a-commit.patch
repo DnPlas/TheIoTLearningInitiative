@@ -1,0 +1,21 @@
+From 974ceb5050ec5ffba38cf0027a9f71e18865b8a6 Mon Sep 17 00:00:00 2001
+From: Daniela Plascencia <daniela.plascencia@intel.com>
+Date: Mon, 13 Jun 2016 08:53:05 +0000
+Subject: [PATCH 1/2] This is a commit
+
+This is a commit
+---
+ teste.patch | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 teste.patch
+
+diff --git a/teste.patch b/teste.patch
+deleted file mode 100644
+index 544050e..0000000
+--- a/teste.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-teste.py
+-- 
+2.6.6
+
